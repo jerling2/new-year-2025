@@ -12,6 +12,16 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        grow: {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '50%': { transform: 'scale(1.1)', opacity: '1' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+      },
+      animation: {
+        grow: 'grow 0.25s ease-in-out',
+      },
     },
   },
   plugins: [],
