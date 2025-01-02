@@ -70,7 +70,7 @@ export default function Home() {
 
   /* I'm using a callback function to prevent data races when handling the async animations. */
   const handleCountDownAnimate = (start: boolean) => {
-    setAnimate((_) => {
+    setAnimate(() => {
       return start;
     });
   }
